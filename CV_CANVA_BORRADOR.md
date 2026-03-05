@@ -14,21 +14,27 @@ Valencia, España · Remoto
 
 ## EXPERIENCIA
 
-| Empresa | Rol | Área |
-|---------|-----|------|
-| **Antara Sol Tec** | Desarrollo & Automatizaciones | IA / Python |
-| **Stadler Raíz** | Ingeniero Eléctrico | Sistemas Eléctricos |
-| **Agora Siglo XXI** | Docencia & Análisis | Educación / RRSS |
-| **Immigration Resolution** | Analista Datos | Datos |
-| **Periódico Digital** | Analista/Reportero | Comunicación |
-| **Florida University State** | Analista | Académico |
+**ANTARA SOL TEC** | Enero 2016 – Agosto 2016  
+Profesional de instalaciones fotovoltaicas · Documentación técnica y normativa
+
+**STADLER RAIL VALENCIA** | Sept 2016 – Enero 2018  
+Parámetros eléctricos para trenes · Migración de esquemas y datos
+
+**PROFESOR MATEMÁTICAS & CIENCIAS** | Abril 2018 – Julio 2024  
+Agora Siglo XXI · No Pierdas el Curso · Florida University State
+
+**IMMIGRATION RESOLUTION** | Sept 2025 – Dic 2025  
+Desarrollo web/app (PHP, Python, Dart) · Análisis de modelos OCR · BBDD (PostgreSQL)
+
+**PERIÓDICO DIGITAL** | Abril 2025 – Presente  
+Workflows automatizados (N8N) · Análisis Datos RRSS
 
 ---
 
 ## EDUCACIÓN
 - **Ing. Técnico Sistemas Eléctricos** — UPV, 2011-2017
 - **Máster Ciencia de Datos** — UOC, 2025-2026
-- **Experto Mercados Eléctricos** — Aula10
+- **Curso Universitario Mercados Eléctricos** — Aula10
 
 ---
 
