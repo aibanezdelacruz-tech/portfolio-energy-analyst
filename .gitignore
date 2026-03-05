@@ -1,0 +1,36 @@
+# OS Files
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+
+# IDE
+.vscode/
+.idea/
+*.code-workspace
+
+# Logs
+*.log
+*.txt
+
+# Environment
+.env
+.env.local
+
+# Node (if using build tools)
+node_modules/
+dist/
+build/
+
+# Python (if applicable)
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+.pytest_cache/
+.venv/
+venv/
+
+# Misc
+.DS_Store
+*~
