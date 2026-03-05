@@ -9,6 +9,16 @@ Thumbs.db
 .idea/
 *.code-workspace
 
+# Documentación privada
+CLAVES_PARA_TEMPOS.md
+OFERTA_TEMPOS.md
+README_PORTFOLIO.md
+
+# CVs y boradores (usa Canva en su lugar)
+CV*.md
+CV*.pdf
+CV*.jpg
+
 # Logs
 *.log
 *.txt
@@ -17,20 +27,19 @@ Thumbs.db
 .env
 .env.local
 
-# Node (if using build tools)
+# Node / Build
 node_modules/
 dist/
 build/
 
-# Python (if applicable)
+# Python
 __pycache__/
 *.py[cod]
-*$py.class
 *.egg-info/
 .pytest_cache/
 .venv/
 venv/
 
 # Misc
-.DS_Store
 *~
+
