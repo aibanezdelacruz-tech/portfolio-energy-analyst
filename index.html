@@ -793,19 +793,20 @@
                 <!-- Visualizaciones interactivas - Se actualizarán con diseño mejorado -->
 
                 <div class="project-links">
-                    <a href="https://aibanezdelacruz-tech.github.io/omie-spot-analysis/" class="btn btn-accent"
-                        target="_blank">Demo interactiva</a>
+                    <a href="#" onclick="switchChart('mini'); return false;" class="btn btn-accent">📈 Precios Mensuales</a>
+                    <a href="#" onclick="switchChart('heatmap'); return false;" class="btn btn-accent">🔥 Mapa Calor Horario</a>
+                    <a href="#" onclick="switchChart('timeseries'); return false;" class="btn btn-accent">📊 Serie Temporal</a>
+                    <a href="https://aibanezdelacruz-tech.github.io/omie-spot-analysis/" class="btn btn-ghost"
+                        target="_blank">Ver demo completa</a>
                     <a href="https://github.com/aibanezdelacruz-tech/omie-spot-analysis" class="btn btn-ghost"
-                        target="_blank">📦 Repositorio completo</a>
-                    <a href="https://github.com/aibanezdelacruz-tech/omie-spot-analysis/blob/main/notebooks/01_eda.ipynb"
-                        class="btn btn-ghost" target="_blank">EDA</a>
-                    <a href="https://github.com/aibanezdelacruz-tech/omie-spot-analysis/blob/main/notebooks/03_forecasting.ipynb"
-                        class="btn btn-ghost" target="_blank">Forecasting</a>
-                    <a href="https://github.com/aibanezdelacruz-tech/omie-spot-analysis/blob/main/notebooks/04_advanced_analysis.ipynb"
-                        class="btn btn-ghost" target="_blank">Análisis</a>
+                        target="_blank">📦 Repositorio</a>
+                </div>
+                <div style="margin-top: 24px;">
+                    <div class="project-chart" id="mini-chart" style="display: block;" data-chart="mini"></div>
+                    <div class="project-chart" id="heatmap-chart" style="display: none; min-width: 100%; max-width: none;" data-chart="heatmap"></div>
+                    <div class="project-chart" id="timeseries-chart" style="display: none; min-width: 100%; max-width: none;" data-chart="timeseries"></div>
                 </div>
             </div>
-            <div class="project-chart" id="mini-chart"></div>
         </div>
     </section>
 
@@ -919,8 +920,8 @@
             <p>Interesado en roles de análisis de mercados energéticos, forecasting y optimización de compra de energía.
             </p>
             <div class="contact-links">
-                <a href="mailto:tu@email.com" class="btn btn-accent">✉️ Email</a>
-                <a href="https://linkedin.com/in/aibanezdelacruz" class="btn btn-ghost" target="_blank">🔗 LinkedIn</a>
+                <a href="mailto:alejandro.ibanezdelacruz@gmail.com" class="btn btn-accent">✉️ Email</a>
+                <a href="https://www.linkedin.com/in/aibanezdelacruz" class="btn btn-ghost" target="_blank">🔗 LinkedIn</a>
                 <a href="https://github.com/aibanezdelacruz-tech" class="btn btn-ghost" target="_blank">💻 GitHub</a>
                 <a href="https://aibanezdelacruz-tech.github.io/omie-spot-analysis/" class="btn btn-green"
                     target="_blank">⚡ Demo OMIE</a>
@@ -938,6 +939,17 @@
     </footer>
 
     <script>
+        // Función para cambiar entre gráficos
+        function switchChart(chartName) {
+            document.querySelectorAll('[data-chart]').forEach(el => {
+                el.style.display = 'none';
+            });
+            const selected = document.getElementById(chartName + '-chart');
+            if (selected) {
+                selected.style.display = 'block';
+            }
+        }
+
         // Grafico real: precios mensuales OMIE cargados desde JSON exportado por el modelo
         async function loadPortfolioChart() {
             const chartEl = document.getElementById('mini-chart');
